@@ -1,4 +1,4 @@
-name: 采集并部署聊斋图鉴
+name: 采集并部署
 
 on:
   push:
@@ -6,50 +6,45 @@ on:
     paths:
       - 'config.json'
       - 'scripts/**'
-      - '.github/workflows/track.yml'
   schedule:
-    - cron: "0 18 * * *"    # 每天北京时间凌晨2点
-  workflow_dispatch:         # 手动触发
+    - cron: "0 2 * * *"
+  workflow_dispatch:
 
 jobs:
-  collect-and-deploy:
+  collect:
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pages: write
       id-token: write
-    
     steps:
-    - name: 检出代码
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 1
+    - uses: actions/checkout@v4
     
-    - name: 设置 Python
+    - name: Setup Python
       uses: actions/setup-python@v5
       with:
-        python-version: "3.11"
-        cache: pip
+        python-version: '3.11'
+        cache: 'pip'
     
-    - name: 安装依赖
+    - name: Install deps
       run: pip install requests
     
-    - name: 采集数据
+    - name: Collect data
       run: python scripts/collect.py
       
-    - name: 生成页面
+    - name: Generate pages
       run: python scripts/generate.py
     
-    - name: 提交数据变更
+    - name: Commit data
       run: |
-        git config user.name "liaozhai-bot"
-        git config user.email "bot@liaozhai-tujian"
+        git config user.name "bot"
+        git config user.email "bot@x"
         git add events/
-        git diff --quiet && git diff --staged --quiet || git commit -m "auto: 更新采集数据 $(date +'%Y-%m-%d %H:%M')"
+        git diff --quiet && git diff --staged --quiet || git commit -m "auto: update $(date +%Y-%m-%d)"
         git push
     
-    - name: 部署到 GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Deploy to Pages
+      uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: .

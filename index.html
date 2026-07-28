@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>现代聊斋图鉴</title>
+<link rel="stylesheet" href="/liaozhai-tujian/assets/style.css">
+</head>
+<body>
+<header>
+  <h1>现代聊斋图鉴</h1>
+  <p class="subtitle">网络社会舆论演化追踪</p>
+  <p class="description">每个事件，我们追踪其在不同平台的舆论演变，记录这个时代的集体叙事。</p>
+</header>
+
+<main id="event-list">
+  <div class="loading">加载中...</div>
+</main>
+
+<footer>
+  <p>数据来源：B站评论区 · 自动采集 + 聚类分析</p>
+  <p>由 Hermes Agent 自动维护 · 事件由主编选定</p>
+</footer>
+
+<script>
+async function loadEvents() {
+  const container = document.getElementById('event-list');
+  
+  // 从 config 获取事件列表
+  const configResp = await fetch('/liaozhai-tujian/config.json');
+  const config = await configResp.json();
+  
+  let html = '';
+  for (const event of config.events) {
+    if (!event.enabled) continue;
+    
+    let eventData = null;
+    try {
+      const dataResp = await fetch(`/liaozhai-tujian/events/${event.id}/data.json`);
+      eventData = await dataResp.json();
+    } catch(e) {
+      // 数据尚未生成
+    }
+    
+    html += `
+      <div class="event-card">
+        <h2><a href="/liaozhai-tujian/events/${event.id}/">${event.title}</a></h2>
+        <p class="event-desc">${event.description}</p>
+        <div class="event-meta">
+          ${eventData ? `
+            <span>📹 ${eventData.total_videos} 个视频</span>
+            <span>💬 ${eventData.total_comments} 条评论</span>
+            <span>📅 ${new Date(eventData.crawl_time).toLocaleDateString('zh-CN')} 更新</span>
+          ` : `
+            <span>⏳ 等待首次采集</span>
+          `}
+        </div>
+      </div>
+    `;
+  }
+  
+  if (!html) {
+    html = '<p class="empty">暂无事件，请在 config.json 中添加</p>';
+  }
+  
+  container.innerHTML = html;
+}
+
+loadEvents();
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+name: 采集并部署聊斋图鉴
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'config.json'
+      - 'scripts/**'
+      - '.github/workflows/track.yml'
+  schedule:
+    - cron: "0 18 * * *"    # 每天北京时间凌晨2点
+  workflow_dispatch:         # 手动触发
+
+jobs:
+  collect-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+    
+    - name: 设置 Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+        cache: pip
+    
+    - name: 安装依赖
+      run: pip install requests
+    
+    - name: 采集数据
+      run: python scripts/collect.py
+      
+    - name: 生成页面
+      run: python scripts/generate.py
+    
+    - name: 提交数据变更
+      run: |
+        git config user.name "liaozhai-bot"
+        git config user.email "bot@liaozhai-tujian"
+        git add events/
+        git diff --quiet && git diff --staged --quiet || git commit -m "auto: 更新采集数据 $(date +'%Y-%m-%d %H:%M')"
+        git push
+    
+    - name: 部署到 GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .
+        keep_files: true

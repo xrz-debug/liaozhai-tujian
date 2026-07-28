@@ -20,14 +20,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
-    - name: Setup Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
-        cache: 'pip'
-    
     - name: Install deps
-      run: pip install requests
+      run: pip3 install requests --break-system-packages || pip install requests
     
     - name: Collect data
       run: python scripts/collect.py

@@ -220,21 +220,6 @@ def save_event(data, output_dir="events"):
     print(f"数据已保存到 {path}")
     return path
 
-if __name__ == '__main__':
-    config_path = sys.argv[1] if len(sys.argv) > 1 else 'config.json'
-    output_dir = sys.argv[2] if len(sys.argv) > 2 else 'events'
-    
-    config = load_config(config_path)
-    
-    for event in config['events']:
-        if not event.get('enabled', True):
-            continue
-        data = build_event_data(event)
-        save_event(data, output_dir)
-        save_history_snapshot(data, output_dir)
-    
-    print("\n=== 全部完成 ===")
-
 def save_history_snapshot(data, output_dir="events"):
     event_dir = os.path.join(output_dir, data["event_id"])
     os.makedirs(event_dir, exist_ok=True)
@@ -263,3 +248,18 @@ def save_history_snapshot(data, output_dir="events"):
     with open(history_path, "w", encoding="utf-8") as f:
         __import__("json").dump(history, f, ensure_ascii=False, indent=2)
     print(f"历史快照已保存 ({len(history)} 条)")
+
+if __name__ == '__main__':
+    config_path = sys.argv[1] if len(sys.argv) > 1 else 'config.json'
+    output_dir = sys.argv[2] if len(sys.argv) > 2 else 'events'
+    
+    config = load_config(config_path)
+    
+    for event in config['events']:
+        if not event.get('enabled', True):
+            continue
+        data = build_event_data(event)
+        save_event(data, output_dir)
+        save_history_snapshot(data, output_dir)
+    
+    print("\n=== 全部完成 ===")

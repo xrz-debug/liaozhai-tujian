@@ -3,13 +3,29 @@
 聊斋图鉴 - B站数据采集脚本 v2
 搜索配置的事件关键词 -> 拉视频列表（标题过滤）-> 拉评论区 -> 聚类 -> 输出 data.json
 """
-import json, requests, time, os, sys, re
+import json, time, os, sys, re, subprocess
 from datetime import datetime
 
-BILIBILI_HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
-    'Referer': 'https://www.bilibili.com/',
-}
+def curl_get(url, timeout=15):
+    """通过 Windows curl 发请求，绕过 Python requests 的 TLS 指纹检测"""
+    try:
+        result = subprocess.run(
+            ['/mnt/c/Windows/System32/curl.exe'] if os.path.exists('/mnt/c/Windows/System32/curl.exe') else ['curl'],
+            [
+                '-s', '--max-time', str(timeout),
+                '-H', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
+                '-H', 'Referer: https://www.bilibili.com/',
+                '-H', 'Origin: https://www.bilibili.com',
+                '-H', 'Accept: application/json, text/plain, */*',
+                '-H', 'Accept-Language: zh-CN,zh;q=0.9',
+                url
+            ],
+            capture_output=True, text=True, timeout=timeout
+        )
+        return json.loads(result.stdout)
+    except Exception as e:
+        print(f"  curl 请求失败: {e}")
+        return None
 
 def load_config(config_path="config.json"):
     with open(config_path, 'r', encoding='utf-8') as f:
@@ -17,10 +33,9 @@ def load_config(config_path="config.json"):
 
 def search_bilibili(keyword, max_results=30):
     """B站搜索视频"""
-    url = f"https://api.bilibili.com/x/web-interface/search/all/v2?keyword={requests.utils.quote(keyword)}"
-    resp = requests.get(url, headers=BILIBILI_HEADERS, timeout=15)
-    data = resp.json()
-    if data.get('code') != 0:
+    url = f"https://api.bilibili.com/x/web-interface/search/all/v2?keyword={__import__('urllib.parse').quote(keyword)}"
+    data = curl_get(url)
+    if not data or data.get('code') != 0:
         return []
     
     videos = []
@@ -46,9 +61,8 @@ def get_comments(aid, max_pages=30):
     for pn in range(1, max_pages + 1):
         url = f"https://api.bilibili.com/x/v2/reply/main?type=1&oid={aid}&mode=3&ps=20&pn={pn}"
         try:
-            resp = requests.get(url, headers=BILIBILI_HEADERS, timeout=10)
-            data = resp.json()
-            if data.get('code') != 0:
+            data = curl_get(url)
+            if not data or data.get('code') != 0:
                 break
             replies = data['data'].get('replies') or []
             if not replies:
@@ -205,8 +219,46 @@ def build_event_data(event_cfg):
         'total_videos': len(relevant),
         'total_comments': len(all_comments),
     }
-    
+
     return output
+
+
+def save_history_snapshot(data, output_dir="events"):
+    """追加一条历史快照到 history.json，用于趋势图"""
+    event_dir = os.path.join(output_dir, data['event_id'])
+    os.makedirs(event_dir, exist_ok=True)
+    history_path = os.path.join(event_dir, 'history.json')
+    
+    clusters = data.get('clusters', {})
+    summary = clusters.get('_summary', {})
+    
+    snapshot = {
+        'date': datetime.now().strftime('%Y-%m-%d'),
+        'total_comments': data['total_comments'],
+        'total_videos': data['total_videos'],
+    }
+    for label, info in clusters.items():
+        if label.startswith('_'):
+            continue
+        snapshot[label] = info['count']
+    
+    history = []
+    if os.path.exists(history_path):
+        with open(history_path, 'r', encoding='utf-8') as f:
+            try:
+                history = json.load(f)
+            except:
+                history = []
+    
+    # 同一天不重复追加
+    if history and history[-1]['date'] == snapshot['date']:
+        history[-1] = snapshot
+    else:
+        history.append(snapshot)
+    
+    with open(history_path, 'w', encoding='utf-8') as f:
+        json.dump(history, f, ensure_ascii=False, indent=2)
+    print(f"历史快照已保存到 {history_path} ({len(history)} 条)")
 
 def save_event(data, output_dir="events"):
     """保存事件数据到 JSON 文件"""
@@ -230,5 +282,6 @@ if __name__ == '__main__':
             continue
         data = build_event_data(event)
         save_event(data, output_dir)
+        save_history_snapshot(data, output_dir)
     
     print("\n=== 全部完成 ===")

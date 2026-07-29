@@ -188,6 +188,7 @@ def build_event_data(event_cfg):
     
     # 构建输出
     output = {
+        "source": "bilibili",
         'event_id': event_id,
         'event_title': event_cfg['title'],
         'event_description': event_cfg.get('description', ''),
@@ -219,6 +220,35 @@ def save_event(data, output_dir="events"):
     print(f"数据已保存到 {path}")
     return path
 
+def save_history_snapshot(data, output_dir="events"):
+    event_dir = os.path.join(output_dir, data["event_id"])
+    os.makedirs(event_dir, exist_ok=True)
+    history_path = os.path.join(event_dir, "history.json")
+    clusters = data.get("clusters", {})
+    snapshot = {
+        "date": __import__("datetime").datetime.now().strftime("%Y-%m-%d"),
+        "total_comments": data["total_comments"],
+        "total_videos": data["total_videos"],
+    }
+    for label, info in clusters.items():
+        if label.startswith("_"):
+            continue
+        snapshot[label] = info["count"]
+    history = []
+    if os.path.exists(history_path):
+        with open(history_path, encoding="utf-8") as f:
+            try:
+                history = __import__("json").load(f)
+            except Exception:
+                history = []
+    if history and history[-1]["date"] == snapshot["date"]:
+        history[-1] = snapshot
+    else:
+        history.append(snapshot)
+    with open(history_path, "w", encoding="utf-8") as f:
+        __import__("json").dump(history, f, ensure_ascii=False, indent=2)
+    print(f"历史快照已保存 ({len(history)} 条)")
+
 if __name__ == '__main__':
     config_path = sys.argv[1] if len(sys.argv) > 1 else 'config.json'
     output_dir = sys.argv[2] if len(sys.argv) > 2 else 'events'
@@ -230,5 +260,6 @@ if __name__ == '__main__':
             continue
         data = build_event_data(event)
         save_event(data, output_dir)
+        save_history_snapshot(data, output_dir)
     
     print("\n=== 全部完成 ===")

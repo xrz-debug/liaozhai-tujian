@@ -223,3 +223,43 @@ footer {
 footer p {
   margin: 0.3rem 0;
 }
+
+/* 平台标签 */
+.source-badge {
+  margin-top: 0.5rem;
+}
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.badge.bilibili {
+  background: #00a1d6;
+  color: #fff;
+}
+.badge.douyin {
+  background: #000;
+  color: #fff;
+  border: 1px solid #fe2c55;
+}
+.badge.xiaohongshu {
+  background: #ff2442;
+  color: #fff;
+}
+
+/* 趋势图卡片 */
+.trend-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+.trend-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--muted);
+}

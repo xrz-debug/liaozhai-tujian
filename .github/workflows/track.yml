@@ -1,12 +1,12 @@
-name: 生成并部署
-
+name: 采集并部署
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: "0 2 * * *"
   workflow_dispatch:
-
 jobs:
-  deploy:
+  collect:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -14,13 +14,12 @@ jobs:
       id-token: write
     steps:
     - uses: actions/checkout@v4
-    
     - name: Install deps
       run: pip3 install requests --break-system-packages || pip install requests
-    
+    - name: Collect data
+      run: python scripts/collect.py
     - name: Generate pages
       run: python scripts/generate.py
-    
     - name: Commit data
       run: |
         git config user.name "bot"
@@ -28,7 +27,6 @@ jobs:
         git add events/
         git diff --quiet && git diff --staged --quiet || git commit -m "auto: update $(date +%Y-%m-%d)"
         git push
-    
     - name: Deploy to Pages
       uses: peaceiris/actions-gh-pages@v4
       with:

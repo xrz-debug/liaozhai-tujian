@@ -11,6 +11,12 @@
   <h1>现代聊斋图鉴</h1>
   <p class="subtitle">网络社会舆论演化追踪</p>
   <p class="description">每个事件，我们追踪其在不同平台的舆论演变，记录这个时代的集体叙事。</p>
+  <div class="filter-bar" id="filter-bar">
+    <button class="filter-btn active" data-source="all">全部</button>
+    <button class="filter-btn" data-source="bilibili">📺 B站</button>
+    <button class="filter-btn" data-source="douyin">🎵 抖音</button>
+    <button class="filter-btn" data-source="xiaohongshu">📕 小红书</button>
+  </div>
 </header>
 
 <main id="event-list">
@@ -23,10 +29,9 @@
 </footer>
 
 <script>
-async function loadEvents() {
+async function loadEvents(filterSource = 'all') {
   const container = document.getElementById('event-list');
   
-  // 从 config 获取事件列表
   const configResp = await fetch('/liaozhai-tujian/config.json');
   const config = await configResp.json();
   
@@ -38,15 +43,21 @@ async function loadEvents() {
     try {
       const dataResp = await fetch(`/liaozhai-tujian/events/${event.id}/data.json`);
       eventData = await dataResp.json();
-    } catch(e) {
-      // 数据尚未生成
-    }
+    } catch(e) {}
+    
+    // 获取平台，默认bilibili
+    const source = (eventData && eventData.source) || 'bilibili';
+    const sourceLabel = {bilibili: 'B站', douyin: '抖音', xiaohongshu: '小红书'}[source] || source.toUpperCase();
+    
+    // 筛选
+    if (filterSource !== 'all' && source !== filterSource) continue;
     
     html += `
-      <div class="event-card">
+      <div class="event-card" data-source="${source}">
         <h2><a href="/liaozhai-tujian/events/${event.id}/">${event.title}</a></h2>
         <p class="event-desc">${event.description}</p>
         <div class="event-meta">
+          <span class="badge ${source}">${sourceLabel}</span>
           ${eventData ? `
             <span>📹 ${eventData.total_videos} 个视频</span>
             <span>💬 ${eventData.total_comments} 条评论</span>
@@ -65,6 +76,17 @@ async function loadEvents() {
   
   container.innerHTML = html;
 }
+
+// 筛选按钮事件
+document.getElementById('filter-bar').addEventListener('click', function(e) {
+  const btn = e.target.closest('.filter-btn');
+  if (!btn) return;
+  
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  
+  loadEvents(btn.dataset.source);
+});
 
 loadEvents();
 </script>

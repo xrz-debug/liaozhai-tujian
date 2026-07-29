@@ -202,6 +202,7 @@ def build_event_data(event_cfg):
     
     # 构建输出
     output = {
+        'source': 'bilibili',
         'event_id': event_id,
         'event_title': event_cfg['title'],
         'event_description': event_cfg.get('description', ''),

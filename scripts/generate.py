@@ -116,6 +116,7 @@ def render_event_page(data, history=None):
   <p><a href="/liaozhai-tujian/" style="color:var(--muted);text-decoration:none;">← 返回首页</a></p>
   <h1>{data['event_title']}</h1>
   <p class="description">{data['event_description']}</p>
+  <p class="source-badge"><span class="badge {data.get('source', 'bilibili')}">📡 {data.get('source', 'bilibili').upper()}</span></p>
 </header>
 
 <main>

@@ -3,13 +3,13 @@
   "event_id": "fuyao-keji-daxue",
   "event_title": "福耀科技大学舆论争议",
   "event_description": "曹德旺捐资创办的福耀科技大学引发网络热议，B站相关视频评论区观点分化明显。",
-  "crawl_time": "2026-09-13T07:16:22.209432",
+  "crawl_time": "2026-09-14T07:40:34.870680",
   "videos": [
     {
       "aid": 115782872735191,
       "bvid": "BV1HeBZBfEgb",
       "title": "福耀科技大学，三本都不如。张雪峰太敢说了。",
-      "play": 552026,
+      "play": 552219,
       "author": "雪峰老师教你报志愿",
       "comment_count": 400,
       "url": "https://www.bilibili.com/video/BV1HeBZBfEgb"
@@ -18,16 +18,25 @@
       "aid": 117218650101407,
       "bvid": "BV1qAbj6jEVE",
       "title": "福耀科技大学2026开学典礼王树国校长寄语新生！",
-      "play": 3406,
+      "play": 3510,
       "author": "有典有故",
       "comment_count": 4,
       "url": "https://www.bilibili.com/video/BV1qAbj6jEVE"
     },
     {
+      "aid": 117229018483573,
+      "bvid": "BV1YbbK6UE95",
+      "title": "福耀科技大学开学，曹德旺王树国亲自迎新！",
+      "play": 26167,
+      "author": "新行情",
+      "comment_count": 400,
+      "url": "https://www.bilibili.com/video/BV1YbbK6UE95"
+    },
+    {
       "aid": 116836230235005,
       "bvid": "BV1YzKo6eEWM",
       "title": "福耀科大澄清自负盈亏争议！学生噤声原因揭秘，张雪峰预言被证实",
-      "play": 322856,
+      "play": 322945,
       "author": "全球-科普",
       "comment_count": 400,
       "url": "https://www.bilibili.com/video/BV1YzKo6eEWM"
@@ -36,118 +45,46 @@
       "aid": 115978427963515,
       "bvid": "BV1YT6wBoEwq",
       "title": "我孩子能考690，我非常焦虑，我想让他上福耀科技大学",
-      "play": 43599,
+      "play": 43610,
       "author": "雪峰老师教你报志愿",
       "comment_count": 400,
       "url": "https://www.bilibili.com/video/BV1YT6wBoEwq"
     },
     {
+      "aid": 116910268221821,
+      "bvid": "BV15WNy6PE9d",
+      "title": "福耀科大，你牛大了",
+      "play": 388687,
+      "author": "是123_本人",
+      "comment_count": 340,
+      "url": "https://www.bilibili.com/video/BV15WNy6PE9d"
+    },
+    {
       "aid": 115195804390740,
       "bvid": "BV1w6p7zbEQA",
       "title": "【完整版】福耀科技大学开学典礼 王树国校长致辞",
-      "play": 82512,
+      "play": 82531,
       "author": "央视网",
-      "comment_count": 120,
-      "url": "https://www.bilibili.com/video/BV1w6p7zbEQA"
-    },
-    {
-      "aid": 117229018483573,
-      "bvid": "BV1YbbK6UE95",
-      "title": "福耀科技大学开学，曹德旺王树国亲自迎新！",
-      "play": 23847,
-      "author": "新行情",
       "comment_count": 80,
-      "url": "https://www.bilibili.com/video/BV1YbbK6UE95"
+      "url": "https://www.bilibili.com/video/BV1w6p7zbEQA"
     },
     {
       "aid": 115194026071530,
       "bvid": "BV1papVzEEz8",
       "title": "福耀科技大学第一界新生代表发言，难以想象这含金量有多高",
-      "play": 35271,
+      "play": 35319,
       "author": "账号已注销",
-      "comment_count": 60,
+      "comment_count": 20,
       "url": "https://www.bilibili.com/video/BV1papVzEEz8"
-    },
-    {
-      "aid": 116910268221821,
-      "bvid": "BV15WNy6PE9d",
-      "title": "福耀科大，你牛大了",
-      "play": 388238,
-      "author": "是123_本人",
-      "comment_count": 80,
-      "url": "https://www.bilibili.com/video/BV15WNy6PE9d"
-    },
-    {
-      "aid": 116786368418045,
-      "bvid": "BV1bBjx6cE3Y",
-      "title": "福耀科技大学校长王树国深度解读当前大学形态！",
-      "play": 30444,
-      "author": "有典有故",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1bBjx6cE3Y"
     },
     {
       "aid": 114160834714236,
       "bvid": "BV1mdQzYbER2",
       "title": "对标斯坦福？福耀科技大学 靠谱吗?它是干什么的？适合谁读？",
-      "play": 91516,
+      "play": 91517,
       "author": "北大研哥",
-      "comment_count": 0,
+      "comment_count": 20,
       "url": "https://www.bilibili.com/video/BV1mdQzYbER2"
-    },
-    {
-      "aid": 116957495959506,
-      "bvid": "BV1WVKa6LE5x",
-      "title": "【采风】福耀科技大学26招生再创新高 新增3省份招生“热门专业” 甘肃中学喜报刊登清北及福耀科技大学 对于此事让人拭目以待",
-      "play": 75586,
-      "author": "邪恶鹦鹉5号机",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1WVKa6LE5x"
-    },
-    {
-      "aid": 117224840959502,
-      "bvid": "BV1c5b46SE3J",
-      "title": "福耀科技大学2026开学典礼，王树国校长寄语新生！",
-      "play": 1129,
-      "author": "腾讯新闻",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1c5b46SE3J"
-    },
-    {
-      "aid": 114172192889992,
-      "bvid": "BV1VDQaYSEpJ",
-      "title": "张雪峰评价福耀科技大学，简直一针见血",
-      "play": 216202,
-      "author": "林舞的猫",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1VDQaYSEpJ"
-    },
-    {
-      "aid": 116661914963757,
-      "bvid": "BV1ZcVg6bEsd",
-      "title": "快高考填报志愿了，沉浸式带你逛一圈福耀科技大学",
-      "play": 4733,
-      "author": "还在跑步的火啊",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1ZcVg6bEsd"
-    },
-    {
-      "aid": 115186023472752,
-      "bvid": "BV1RzHvzFEtf",
-      "title": "《福耀科技大学》福耀大学刚开学就把一群985学生整破防了！",
-      "play": 122298,
-      "author": "暴力蛙纪实",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1RzHvzFEtf"
-    },
-    {
-      "aid": 114930741157640,
-      "bvid": "BV1Zb8EzgEp6",
-      "title": "郑强坦言不入职福耀科技大学真相，字字戳中教育核心！",
-      "play": 69940,
-      "author": "放开他让wo来",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1Zb8EzgEp6"
     },
     {
       "aid": 1252330405,
@@ -155,275 +92,284 @@
       "title": "我就是个小角色，人家福耀科技大学看不上我滴。",
       "play": 96408,
       "author": "峰乐一",
-      "comment_count": 0,
+      "comment_count": 20,
       "url": "https://www.bilibili.com/video/BV11J4m1L7wE"
     },
     {
-      "aid": 114908461079834,
-      "bvid": "BV1MkbkzdE48",
-      "title": "福耀科技大学媲美985吗，张雪峰笑而不语",
-      "play": 4968,
-      "author": "张雪峰高考讲座",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1MkbkzdE48"
+      "aid": 114172192889992,
+      "bvid": "BV1VDQaYSEpJ",
+      "title": "张雪峰评价福耀科技大学，简直一针见血",
+      "play": 216205,
+      "author": "林舞的猫",
+      "comment_count": 40,
+      "url": "https://www.bilibili.com/video/BV1VDQaYSEpJ"
     },
     {
-      "aid": 114597579195938,
-      "bvid": "BV1Gb7szHEiJ",
-      "title": "张雪峰锐评福耀科技大学，我是给你们泼冷水的人",
-      "play": 46889,
-      "author": "峰哥好事",
+      "aid": 116661914963757,
+      "bvid": "BV1ZcVg6bEsd",
+      "title": "快高考填报志愿了，沉浸式带你逛一圈福耀科技大学",
+      "play": 4734,
+      "author": "还在跑步的火啊",
       "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1Gb7szHEiJ"
+      "url": "https://www.bilibili.com/video/BV1ZcVg6bEsd"
     },
     {
-      "aid": 116833176786586,
-      "bvid": "BV1TWKQ6gEMR",
-      "title": "王树国：进入福耀科技大学不用挑专业，不用为选什么专业发愁",
-      "play": 2213,
-      "author": "郯海影视一收徒中",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1TWKQ6gEMR"
-    },
-    {
-      "aid": 116866764773894,
-      "bvid": "BV1CyTC62EAL",
-      "title": "【采风】福耀科技大学（2025首届招生）还能办下去吗？",
-      "play": 121312,
+      "aid": 116957495959506,
+      "bvid": "BV1WVKa6LE5x",
+      "title": "【采风】福耀科技大学26招生再创新高 新增3省份招生“热门专业” 甘肃中学喜报刊登清北及福耀科技大学 对于此事让人拭目以待",
+      "play": 75649,
       "author": "邪恶鹦鹉5号机",
       "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1CyTC62EAL"
+      "url": "https://www.bilibili.com/video/BV1WVKa6LE5x"
     },
     {
-      "aid": 115200132978797,
-      "bvid": "BV1QNHZzDEK4",
-      "title": "曹德旺在福耀科技大学开学典礼致辞：教育绝不能脱离实际",
-      "play": 5985,
-      "author": "腾讯新闻",
+      "aid": 114930741157640,
+      "bvid": "BV1Zb8EzgEp6",
+      "title": "郑强坦言不入职福耀科技大学真相，字字戳中教育核心！",
+      "play": 69942,
+      "author": "放开他让wo来",
       "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1QNHZzDEK4"
+      "url": "https://www.bilibili.com/video/BV1Zb8EzgEp6"
     },
     {
-      "aid": 115202196641061,
-      "bvid": "BV1Y8pczwEtY",
-      "title": "曹德旺先生在福耀科技大学2025级本科生开学典礼的演讲",
-      "play": 3438,
-      "author": "B站名人演说堂",
+      "aid": 115186023472752,
+      "bvid": "BV1RzHvzFEtf",
+      "title": "《福耀科技大学》福耀大学刚开学就把一群985学生整破防了！",
+      "play": 122394,
+      "author": "暴力蛙纪实",
       "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1Y8pczwEtY"
+      "url": "https://www.bilibili.com/video/BV1RzHvzFEtf"
     },
     {
-      "aid": 115885079534910,
-      "bvid": "BV1VrrBBPE5B",
-      "title": "犀利点评福耀科技大学，捐款百亿建大学是真不够！张雪峰一针见血",
-      "play": 14096,
-      "author": "阅知人间",
+      "aid": 116786368418045,
+      "bvid": "BV1bBjx6cE3Y",
+      "title": "福耀科技大学校长王树国深度解读当前大学形态！",
+      "play": 30566,
+      "author": "有典有故",
       "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1VrrBBPE5B"
+      "url": "https://www.bilibili.com/video/BV1bBjx6cE3Y"
     },
     {
-      "aid": 114571490626693,
-      "bvid": "BV1zaj7zGECE",
-      "title": "福耀科技大学值不值得报？我只能给你说到这了",
-      "play": 23044,
-      "author": "师说考研考公",
+      "aid": 658458508,
+      "bvid": "BV1ph4y1f7RH",
+      "title": "峰哥锐评曹德旺创办福耀科技大学",
+      "play": 19114,
+      "author": "能飞会飞的鸟",
       "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1zaj7zGECE"
+      "url": "https://www.bilibili.com/video/BV1ph4y1f7RH"
     },
     {
-      "aid": 117218834711878,
-      "bvid": "BV1GtbL63EoU",
-      "title": "福建福耀科技大学2026级本科新生代表田智鹤发言！",
-      "play": 231,
-      "author": "师兄phd",
+      "aid": 114594492259243,
+      "bvid": "BV1D27JzeEgS",
+      "title": "吴小莉专访王树国&amp;曹德旺：畅谈福耀科技大学未来！",
+      "play": 6294,
+      "author": "福睿达Fred",
       "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1GtbL63EoU"
-    },
-    {
-      "aid": 114183567836032,
-      "bvid": "BV1whXLYpEzT",
-      "title": "张雪峰谈福耀科技大学，这段对话耐人寻味",
-      "play": 213977,
-      "author": "张雪峰老师聊升学规划",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1whXLYpEzT"
-    },
-    {
-      "aid": 114209404814734,
-      "bvid": "BV1jNXbYmEJT",
-      "title": "如何评价福耀科技大学？我就是泼冷水的那个人",
-      "play": 330791,
-      "author": "师说考研考公",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1jNXbYmEJT"
-    },
-    {
-      "aid": 117127566592172,
-      "bvid": "BV1bB8c6cEAc",
-      "title": "去往福耀科大的单程车票！是鸿门宴，还是单刀赴会？",
-      "play": 29901,
-      "author": "是123_本人",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1bB8c6cEAc"
-    },
-    {
-      "aid": 117235427378730,
-      "bvid": "BV1kSYJ6jEd7",
-      "title": "福耀科技大学2026本科新生代表田智鹤走红：她来自甘肃，高考656分，是福耀科大在甘肃录取的第一名，本人透露选择福耀科大原因！",
-      "play": 152,
-      "author": "只做两袖清风的人",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1kSYJ6jEd7"
-    },
-    {
-      "aid": 116260973054937,
-      "bvid": "BV1asAnzqEEQ",
-      "title": "实拍福耀科技大学：居然仅50名学生！",
-      "play": 406917,
-      "author": "小喂的味旅程",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1asAnzqEEQ"
+      "url": "https://www.bilibili.com/video/BV1D27JzeEgS"
     },
     {
       "aid": 117173636894133,
       "bvid": "BV1LGtN6mERF",
       "title": "福耀科技大学能容纳1点6万人，为什么两年加起来才招了150名学生？",
-      "play": 46707,
+      "play": 48370,
       "author": "杂谈工作室",
       "comment_count": 0,
       "url": "https://www.bilibili.com/video/BV1LGtN6mERF"
     },
     {
-      "aid": 116921341053514,
-      "bvid": "BV1vPNe6KEuU",
-      "title": "福耀科大，你牛在哪？",
-      "play": 62063,
-      "author": "是123_本人",
+      "aid": 117151021143738,
+      "bvid": "BV1THhK63ELo",
+      "title": "福耀科技大学校长王树国最新演讲完整版",
+      "play": 789,
+      "author": "底层思想",
       "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1vPNe6KEuU"
+      "url": "https://www.bilibili.com/video/BV1THhK63ELo"
+    },
+    {
+      "aid": 115183473135726,
+      "bvid": "BV1vTH8z1Edc",
+      "title": "福耀科大开学第一课暴击985高校",
+      "play": 966120,
+      "author": "纪事说",
+      "comment_count": 0,
+      "url": "https://www.bilibili.com/video/BV1vTH8z1Edc"
+    },
+    {
+      "aid": 117218834711878,
+      "bvid": "BV1GtbL63EoU",
+      "title": "福建福耀科技大学2026级本科新生代表田智鹤发言！",
+      "play": 234,
+      "author": "师兄phd",
+      "comment_count": 0,
+      "url": "https://www.bilibili.com/video/BV1GtbL63EoU"
     },
     {
       "aid": 116926592322054,
       "bvid": "BV198Ku6NE2i",
       "title": "南京大学，不如福耀科大",
-      "play": 60193,
+      "play": 60249,
       "author": "是123_本人",
       "comment_count": 0,
       "url": "https://www.bilibili.com/video/BV198Ku6NE2i"
     },
     {
-      "aid": 116809319646665,
-      "bvid": "BV1BV7a6vEXj",
-      "title": "福耀科大发布了 本学期学生的 学习生活科研总结视频 #福耀科技大学",
-      "play": 33958,
-      "author": "有说有校啊",
+      "aid": 117224840959502,
+      "bvid": "BV1c5b46SE3J",
+      "title": "福耀科技大学2026开学典礼，王树国校长寄语新生！",
+      "play": 1147,
+      "author": "腾讯新闻",
       "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1BV7a6vEXj"
+      "url": "https://www.bilibili.com/video/BV1c5b46SE3J"
     },
     {
-      "aid": 117234152249419,
-      "bvid": "BV1yzb36jEES",
-      "title": "大一就去剑桥交流？福耀科大暑假刷屏",
-      "play": 142,
-      "author": "校园梦网",
+      "aid": 116833176786586,
+      "bvid": "BV1TWKQ6gEMR",
+      "title": "王树国：进入福耀科技大学不用挑专业，不用为选什么专业发愁",
+      "play": 2218,
+      "author": "郯海影视一收徒中",
       "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1yzb36jEES"
+      "url": "https://www.bilibili.com/video/BV1TWKQ6gEMR"
+    },
+    {
+      "aid": 114618265505922,
+      "bvid": "BV1Po7bzUE5H",
+      "title": "专访福耀集团董事长、福建福耀科技大学理事长曹德旺 福建福耀科技大学校长王树国｜福耀科技大学（上）混沌初开 静待花开",
+      "play": 1893,
+      "author": "白羽铭泽",
+      "comment_count": 0,
+      "url": "https://www.bilibili.com/video/BV1Po7bzUE5H"
+    },
+    {
+      "aid": 116260973054937,
+      "bvid": "BV1asAnzqEEQ",
+      "title": "实拍福耀科技大学：居然仅50名学生！",
+      "play": 407247,
+      "author": "小喂的味旅程",
+      "comment_count": 0,
+      "url": "https://www.bilibili.com/video/BV1asAnzqEEQ"
+    },
+    {
+      "aid": 116798095629189,
+      "bvid": "BV1GAj16dEaM",
+      "title": "张雪峰点评福耀科技大学，这个学校我不想说",
+      "play": 90316,
+      "author": "东门相对论",
+      "comment_count": 0,
+      "url": "https://www.bilibili.com/video/BV1GAj16dEaM"
+    },
+    {
+      "aid": 117127566592172,
+      "bvid": "BV1bB8c6cEAc",
+      "title": "去往福耀科大的单程车票！是鸿门宴，还是单刀赴会？",
+      "play": 30168,
+      "author": "是123_本人",
+      "comment_count": 0,
+      "url": "https://www.bilibili.com/video/BV1bB8c6cEAc"
+    },
+    {
+      "aid": 116921341053514,
+      "bvid": "BV1vPNe6KEuU",
+      "title": "福耀科大，你牛在哪？",
+      "play": 62152,
+      "author": "是123_本人",
+      "comment_count": 0,
+      "url": "https://www.bilibili.com/video/BV1vPNe6KEuU"
     },
     {
       "aid": 116807725751029,
       "bvid": "BV1JK7t69Ecr",
       "title": "张雪峰当初浅谈“福耀科大”，如今再看，他的预判格外清醒！太历害了！",
-      "play": 455108,
+      "play": 455204,
       "author": "来口西瓜呗",
       "comment_count": 0,
       "url": "https://www.bilibili.com/video/BV1JK7t69Ecr"
     },
     {
-      "aid": 117229035196800,
-      "bvid": "BV1LtbK6JE2B",
-      "title": "福耀科技大学这一番操作太牛了，一般大学都做不来。",
-      "play": 42,
-      "author": "jacy136",
+      "aid": 116809319646665,
+      "bvid": "BV1BV7a6vEXj",
+      "title": "福耀科大发布了 本学期学生的 学习生活科研总结视频 #福耀科技大学",
+      "play": 33968,
+      "author": "有说有校啊",
       "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1LtbK6JE2B"
+      "url": "https://www.bilibili.com/video/BV1BV7a6vEXj"
     },
     {
-      "aid": 114746997081311,
-      "bvid": "BV16aK9zQE9F",
-      "title": "我抱了福耀科技大学！！！！",
-      "play": 226187,
-      "author": "东方岳岳",
+      "aid": 117235427378730,
+      "bvid": "BV1kSYJ6jEd7",
+      "title": "福耀科技大学2026本科新生代表田智鹤走红：她来自甘肃，高考656分，是福耀科大在甘肃录取的第一名，本人透露选择福耀科大原因！",
+      "play": 162,
+      "author": "只做两袖清风的人",
       "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV16aK9zQE9F"
-    },
-    {
-      "aid": 114923510175677,
-      "bvid": "BV1A18YzdEbQ",
-      "title": "674分上福耀科技大学，被指“脑子进水”？当事人回应",
-      "play": 36225,
-      "author": "掌闻视讯",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1A18YzdEbQ"
-    },
-    {
-      "aid": 116804621964807,
-      "bvid": "BV164jR6cEVK",
-      "title": "福耀科技大学能自负盈亏吗",
-      "play": 2658,
-      "author": "谢作诗的经济学课",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV164jR6cEVK"
+      "url": "https://www.bilibili.com/video/BV1kSYJ6jEd7"
     },
     {
       "aid": 116807709040212,
       "bvid": "BV1BM7t6pE8f",
       "title": "福耀科大澄清自负盈亏争议！学生噤声原因揭秘，张雪峰预言被证实",
-      "play": 294283,
+      "play": 294288,
       "author": "来口西瓜呗",
       "comment_count": 0,
       "url": "https://www.bilibili.com/video/BV1BM7t6pE8f"
     },
     {
+      "aid": 117065792947824,
+      "bvid": "BV1MnuS6LEuk",
+      "title": "拿985分报福耀科大   老张劝家长别头脑发热",
+      "play": 5647,
+      "author": "雪峰说规划",
+      "comment_count": 0,
+      "url": "https://www.bilibili.com/video/BV1MnuS6LEuk"
+    },
+    {
+      "aid": 117234152249419,
+      "bvid": "BV1yzb36jEES",
+      "title": "大一就去剑桥交流？福耀科大暑假刷屏",
+      "play": 143,
+      "author": "校园梦网",
+      "comment_count": 0,
+      "url": "https://www.bilibili.com/video/BV1yzb36jEES"
+    },
+    {
+      "aid": 117194021150462,
+      "bvid": "BV1eMtg6RENW",
+      "title": "张雪峰当初浅谈“福耀科大”，如今再看，他的预判格外清醒！太历害了！",
+      "play": 1409,
+      "author": "bili_98278307276",
+      "comment_count": 0,
+      "url": "https://www.bilibili.com/video/BV1eMtg6RENW"
+    },
+    {
       "aid": 116787039443539,
       "bvid": "BV1D7jb63Evr",
       "title": "福耀科技大学各院系自负盈亏？校长王树国：绝非要求市场化创收",
-      "play": 91833,
+      "play": 91871,
       "author": "腾讯新闻",
       "comment_count": 0,
       "url": "https://www.bilibili.com/video/BV1D7jb63Evr"
     },
     {
+      "aid": 116804621964807,
+      "bvid": "BV164jR6cEVK",
+      "title": "福耀科技大学能自负盈亏吗",
+      "play": 2660,
+      "author": "谢作诗的经济学课",
+      "comment_count": 0,
+      "url": "https://www.bilibili.com/video/BV164jR6cEVK"
+    },
+    {
       "aid": 116802910685362,
       "bvid": "BV1UNjR6LEe3",
       "title": "风波升级！福耀科大澄清自负盈亏，曝学生沉默原因，张雪峰说对了",
-      "play": 55712,
+      "play": 55798,
       "author": "乐乐制片厂",
       "comment_count": 0,
       "url": "https://www.bilibili.com/video/BV1UNjR6LEe3"
     },
     {
-      "aid": 116788146804259,
-      "bvid": "BV1t2j863E1G",
-      "title": "福耀科技大学：自负盈亏错在哪了！",
-      "play": 118,
-      "author": "正哥说",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1t2j863E1G"
-    },
-    {
-      "aid": 116792592700459,
-      "bvid": "BV1vD7A62EmP",
-      "title": "666！福耀科技大学准备让各专业自负盈亏！",
-      "play": 2652,
-      "author": "整点电子瓜子",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1vD7A62EmP"
-    },
-    {
       "aid": 116831733945647,
       "bvid": "BV12cKD6KE9Z",
       "title": "福耀科大澄清自负盈亏争议！学生噤声原因揭秘，张雪峰预言被证实",
-      "play": 32206,
+      "play": 32217,
       "author": "兔子-科普",
       "comment_count": 0,
       "url": "https://www.bilibili.com/video/BV12cKD6KE9Z"
@@ -447,48 +393,44 @@
       "url": "https://www.bilibili.com/video/BV1jT386gEct"
     },
     {
-      "aid": 116792592698897,
-      "bvid": "BV1eD7A62EKE",
-      "title": "福耀科技大学要自负盈亏，是顶尖创新还是高分踩坑？",
-      "play": 483,
-      "author": "一凡说升学",
+      "aid": 116788146804259,
+      "bvid": "BV1t2j863E1G",
+      "title": "福耀科技大学：自负盈亏错在哪了！",
+      "play": 118,
+      "author": "正哥说",
       "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1eD7A62EKE"
+      "url": "https://www.bilibili.com/video/BV1t2j863E1G"
     },
     {
       "aid": 117120788596945,
       "bvid": "BV1KR8E6VEh5",
       "title": "果然不出我所料！曹德旺前脚办起福耀科技大学！董明珠后脚就出手了！",
-      "play": 1541,
+      "play": 1552,
       "author": "清澈的爱只为中国2025",
-      "comment_count": 0,
+      "comment_count": 4,
       "url": "https://www.bilibili.com/video/BV1KR8E6VEh5"
     },
     {
-      "aid": 1055498958,
-      "bvid": "BV1en4y197j7",
-      "title": "曹德旺表态，这次福耀大学被叫停，全怪自己!他还要再拿出100亿",
-      "play": 31039,
-      "author": "易水寒影评",
+      "aid": 117193534673076,
+      "bvid": "BV1NCtT6NEef",
+      "title": "曹德旺先生商道经营哲学，大时代发展是多元化还是专注主业发展，且看曹先生的为与不为的价值观#福耀科技大学商学教育 #曹德旺心若菩提课程分享#企业家培训",
+      "play": 93,
+      "author": "福耀科技大学商学教育",
       "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1en4y197j7"
-    },
-    {
-      "aid": 658458508,
-      "bvid": "BV1ph4y1f7RH",
-      "title": "峰哥锐评曹德旺创办福耀科技大学",
-      "play": 19112,
-      "author": "能飞会飞的鸟",
-      "comment_count": 0,
-      "url": "https://www.bilibili.com/video/BV1ph4y1f7RH"
+      "url": "https://www.bilibili.com/video/BV1NCtT6NEef"
     }
   ],
   "clusters": {
     "正面/支持": {
-      "count": 8,
-      "percentage": 5.6,
+      "count": 12,
+      "percentage": 5.8,
       "color": "#2ecc71",
       "representative": [
+        {
+          "content": "我准备读清华北大和我已经读了清华北大是一回事吗？国内一大批实力雄厚历史悠久的高校，都是经过了多少时间精力金钱的投入，才逐步获得的硕士点、博士点。到有些人眼里，王校长和曹老板拿着上过央视的视频，直接跑教育部，说“看见没？我上过央视，赶紧给我把手续办了。”就行是吧？兴办高等教育是一件严肃且任重道远的事，上央视表达的是一种官方层面的支持，不是一路绿灯的通行证。",
+          "likes": 773,
+          "user": "屠騰拒嘯"
+        },
         {
           "content": "民办比不上公办原因在于中国不是纯市场经济国家  有很多资源不是钱能交换来的  公办大学最次是副厅单位  级别越高 就算什么都不做 也能汇集很多资源\n如果希望能办到像国外常青藤级别的民办大学  首先要政府扶持给政策  其次要几家甚至几十家龙头企业不以盈利为目的的投入   还要经历几十年甚至几百年的发展才勉强可以。这在中国是几乎不可能的",
           "likes": 504,
@@ -505,35 +447,30 @@
           "user": "看穿一切的懂王"
         },
         {
+          "content": "无论曹老以前如何，还是希望他能把学校做好做强。总比那些拿钱甩一屁股债跑路去海外购房购岛强。本就可退休颐养天年，还费时费力费心费钱去做点实事已经实属不易了。",
+          "likes": 60,
+          "user": "酱腌白菜"
+        },
+        {
+          "content": "希望他和西湖大学都能起个试验性带头作用吧，做一些实质性改革，要是未来20年普通大学教育还是这样，去这些学校也未尝不可，不过目前不推荐学生去赌前程",
+          "likes": 55,
+          "user": "落日信箱ve"
+        },
+        {
           "content": "希望是一所真正能培养人才的学府，而非是成为资本附庸的工厂，王校长的履历是令人景仰，相信是致力于教，唯一虑在学术圣地是否受资本干预",
           "likes": 31,
           "user": "风起风聚"
         },
         {
-          "content": "这是一位前哈尔滨工业大学，西安交通大学校长的讲话，感觉评论区和弹幕很多人在酸，不知道B站风气最近几年为什么变成这样啦！希望福耀科技大学善待每一位学生，也希望每一位学生对学校和老师保持尊重，互相成就彼此。",
-          "likes": 13,
-          "user": "JakeYang911"
-        },
-        {
-          "content": "真正的好校长，国家之栋梁，国家之幸，民族之幸[支持][支持]",
-          "likes": 12,
-          "user": "樊哥高中物理"
-        },
-        {
-          "content": "王校长和曹先生珠联璧合，让福耀开拓创新敢为人先甘当沃土，祖国感谢你们，人民敬佩你们[福][支持][爱心]",
-          "likes": 1,
-          "user": "勇气做我自己"
-        },
-        {
-          "content": "真完蛋了。各方各业渗透。还点赞。还支持？搞美国优绩主义那一套。以后教育界跟美国一样了。屁股坐在地上，想上面大老爷们给穷人孩子们谋福利？\n学校自负盈亏不就是私人学院吗，一堆人吹",
-          "likes": 1,
-          "user": "赢麻了遥遥领先"
+          "content": "广东、福建人是真的有远见，无论身在国内还是身处海外，他们不仅吃苦耐劳有韧性，特别注重家族宗族发达兴旺，也很注重后代的学习培养，在海内外兴办过很多知名学府，有过非常多的捐资助学传奇故事，在国家民族危亡之时也敢于挺身而出，值得敬佩！👍👍👍",
+          "likes": 16,
+          "user": "嗯33336666"
         }
       ]
     },
     "负面/质疑": {
-      "count": 10,
-      "percentage": 6.9,
+      "count": 19,
+      "percentage": 9.1,
       "color": "#e74c3c",
       "representative": [
         {
@@ -543,7 +480,7 @@
         },
         {
           "content": "说实话真正的民办好大学就西湖和南科大，但南科大已经转正了。人家施一公至少是个货真价实的学者，而一个商人来办学校，你觉得他抱着什么目的？唯利是图的商人压根不可能做亏本买卖的。",
-          "likes": 2928,
+          "likes": 2930,
           "user": "悄悄-是别离的-笙箫"
         },
         {
@@ -558,12 +495,12 @@
         },
         {
           "content": "我是南科大前几届的学生，怎么总有人拿福耀碰瓷南科大。南科大不是民办，深圳政府出钱的。北上广深大城市只有深圳学校少，所以南科大经费特别足，国内的实验平台是数一数二的，我当时经常遇到清北的学生过来借实验室。然后理工科稍微努力一下基本都可以找到杰青以上的老师写推荐信，出国很容易，专业前70%都可以保研。我当时化学系70多人，现在差不多一半博士毕业了。",
-          "likes": 845,
+          "likes": 847,
           "user": "已发子刊已改名"
         },
         {
           "content": "南科大怎么样呢，福耀这么坑，不知道西湖大学，南科大上科大那边啥情况，就业和未来。不会是为了所谓一小批人然后营造一个大家陪跑的环境吧",
-          "likes": 821,
+          "likes": 822,
           "user": "自助超人"
         },
         {
@@ -579,8 +516,8 @@
       ]
     },
     "中立/观望": {
-      "count": 7,
-      "percentage": 4.9,
+      "count": 16,
+      "percentage": 7.7,
       "color": "#f39c12",
       "representative": [
         {
@@ -590,7 +527,7 @@
         },
         {
           "content": "牢雪峰推荐的不一定要去，但是牢雪峰避雷的千万别选",
-          "likes": 2471,
+          "likes": 2473,
           "user": "我是一只大也够"
         },
         {
@@ -599,8 +536,13 @@
           "user": "御坂80079"
         },
         {
+          "content": "我准备读清华北大和我已经读了清华北大是一回事吗？国内一大批实力雄厚历史悠久的高校，都是经过了多少时间精力金钱的投入，才逐步获得的硕士点、博士点。到有些人眼里，王校长和曹老板拿着上过央视的视频，直接跑教育部，说“看见没？我上过央视，赶紧给我把手续办了。”就行是吧？兴办高等教育是一件严肃且任重道远的事，上央视表达的是一种官方层面的支持，不是一路绿灯的通行证。",
+          "likes": 773,
+          "user": "屠騰拒嘯"
+        },
+        {
           "content": "张雪峰说好你不一定信，张雪峰说差你别犟",
-          "likes": 604,
+          "likes": 605,
           "user": "我真的无语哎"
         },
         {
@@ -609,20 +551,20 @@
           "user": "火狐狸哈哈哈"
         },
         {
+          "content": "福耀的员工先把自己孩子送进去做试验，看看四年后有多少成了科学家或企业家人才",
+          "likes": 241,
+          "user": "呼啦圈而"
+        },
+        {
           "content": "福耀科技大学很尴尬，曹德旺现在大力支持，但曹德旺不是神仙，他还有多少年活，他哪天人没了他的继任者会不会这么烧钱办这个学校还和难说",
           "likes": 228,
           "user": "看穿一切的懂王"
-        },
-        {
-          "content": "福建“优秀”商人代表：曹德旺、美团王兴等",
-          "likes": 11,
-          "user": "gpf_gd"
         }
       ]
     },
     "对比讨论": {
-      "count": 47,
-      "percentage": 32.6,
+      "count": 62,
+      "percentage": 29.8,
       "color": "#3498db",
       "representative": [
         {
@@ -637,42 +579,42 @@
         },
         {
           "content": "曹德旺：拨款太多 不利于学生学习[滑稽][滑稽]",
-          "likes": 2142,
+          "likes": 2143,
           "user": "初夏的烟火_"
         },
         {
           "content": "福耀毕业包进大厂，你以为说小米华为比亚迪，其实说的是大型玻璃厂[笑哭]",
-          "likes": 2110,
+          "likes": 2113,
           "user": "DSHW桑田"
         },
         {
           "content": "我不懂为什么很多人都认为第一届学生待遇不会差，如果曹德旺保了第一届却不保第二届，那一年后这个大学照样分数大跳水，福耀名声崩盘。\n\n也就是说，曹德旺想办好福耀，就得每一届都保下来，哪一届出事了这大学都崩盘。更何况如果第二届开始学生分数就跳水了，那么曹德旺更可能及时止损减少对第一届的投入。",
-          "likes": 1613,
+          "likes": 1614,
           "user": "多想变成一个枕头"
         },
         {
           "content": "从一开始办成福耀科技中专不就好了，免三年学费，毕业打包进去玻璃厂流水线，这样才符合曹旺的风格",
-          "likes": 1312,
+          "likes": 1313,
           "user": "米格霍伊"
         },
         {
           "content": "好的华五不比福耀差",
-          "likes": 1065,
+          "likes": 1066,
           "user": "Amarcord-8"
         },
         {
           "content": "兄弟们你们说的我好慌，本人福建570随便填了这玩意，因为我看它去年分数高，想着填就填了，福耀今年再烂会掉到这个分数吗？[笑哭]",
-          "likes": 1020,
+          "likes": 1021,
           "user": "NameTags"
         }
       ]
     },
     "_summary": {
-      "total_comments": 144,
-      "classified": 58,
-      "unclassified": 86
+      "total_comments": 208,
+      "classified": 89,
+      "unclassified": 119
     }
   },
-  "total_videos": 53,
-  "total_comments": 144
+  "total_videos": 46,
+  "total_comments": 208
 }

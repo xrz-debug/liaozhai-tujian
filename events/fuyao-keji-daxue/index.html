@@ -17,9 +17,9 @@
 <main>
   <div class="event-header">
     <div class="meta">
-      <span>📹 37 个相关视频</span>
-      <span>💬 190 条评论（去重）</span>
-      <span>📅 采集于 2026-09-24 07:20</span>
+      <span>📹 35 个相关视频</span>
+      <span>💬 164 条评论（去重）</span>
+      <span>📅 采集于 2026-09-25 07:15</span>
     </div>
   </div>
 
@@ -30,9 +30,9 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
   <script>
-    const dates = ["2026-07-28", "2026-07-29", "2026-07-30", "2026-07-31", "2026-08-01", "2026-08-02", "2026-08-03", "2026-08-04", "2026-08-05", "2026-08-06", "2026-08-07", "2026-08-08", "2026-08-09", "2026-08-10", "2026-08-11", "2026-08-12", "2026-08-13", "2026-08-14", "2026-08-15", "2026-08-16", "2026-08-17", "2026-08-18", "2026-08-19", "2026-08-20", "2026-08-21", "2026-08-22", "2026-08-23", "2026-08-24", "2026-08-25", "2026-08-26", "2026-08-27", "2026-08-28", "2026-08-29", "2026-08-30", "2026-08-31", "2026-09-01", "2026-09-02", "2026-09-03", "2026-09-04", "2026-09-05", "2026-09-06", "2026-09-07", "2026-09-08", "2026-09-09", "2026-09-10", "2026-09-11", "2026-09-12", "2026-09-13", "2026-09-14", "2026-09-15", "2026-09-16", "2026-09-17", "2026-09-18", "2026-09-19", "2026-09-20", "2026-09-21", "2026-09-22", "2026-09-23", "2026-09-24"];
-    const totalData = [243, 140, 250, 233, 193, 224, 274, 161, 188, 160, 246, 142, 312, 181, 187, 166, 80, 297, 122, 140, 141, 141, 148, 141, 178, 176, 151, 104, 421, 146, 231, 441, 148, 141, 261, 184, 192, 314, 172, 247, 187, 213, 175, 277, 215, 180, 182, 144, 208, 159, 158, 181, 180, 166, 163, 119, 151, 164, 190];
-    const clusterData = {"\u6b63\u9762/\u652f\u6301": [48, 5, 12, 8, 5, 8, 11, 8, 8, 5, 10, 6, 13, 8, 8, 8, 4, 11, 5, 7, 5, 7, 5, 4, 6, 6, 5, 4, 15, 6, 7, 12, 6, 5, 9, 4, 7, 11, 5, 7, 5, 6, 6, 11, 10, 6, 10, 8, 12, 5, 5, 6, 6, 10, 6, 5, 9, 12, 9], "\u8d1f\u9762/\u8d28\u7591": [67, 15, 24, 23, 18, 22, 24, 17, 20, 17, 18, 18, 29, 18, 18, 16, 13, 29, 17, 17, 20, 17, 14, 13, 16, 21, 15, 12, 35, 20, 18, 38, 16, 16, 20, 14, 17, 30, 17, 29, 17, 19, 14, 25, 19, 18, 17, 10, 19, 13, 13, 17, 18, 17, 15, 10, 14, 13, 16], "\u4e2d\u7acb/\u89c2\u671b": [35, 11, 23, 25, 15, 24, 26, 15, 15, 8, 12, 11, 20, 11, 10, 17, 9, 24, 10, 10, 11, 16, 9, 9, 9, 15, 10, 7, 24, 8, 10, 28, 7, 8, 19, 8, 8, 14, 10, 12, 10, 14, 11, 21, 12, 15, 13, 7, 16, 10, 10, 9, 11, 15, 12, 10, 7, 15, 10], "\u5bf9\u6bd4\u8ba8\u8bba": [42, 45, 68, 71, 59, 66, 80, 55, 51, 54, 58, 36, 76, 48, 45, 52, 33, 71, 44, 45, 49, 49, 44, 45, 44, 54, 51, 39, 106, 46, 57, 111, 47, 50, 79, 50, 51, 77, 53, 60, 49, 58, 49, 75, 53, 55, 60, 47, 62, 41, 41, 50, 54, 54, 47, 26, 55, 53, 55]};
+    const dates = ["2026-07-28", "2026-07-29", "2026-07-30", "2026-07-31", "2026-08-01", "2026-08-02", "2026-08-03", "2026-08-04", "2026-08-05", "2026-08-06", "2026-08-07", "2026-08-08", "2026-08-09", "2026-08-10", "2026-08-11", "2026-08-12", "2026-08-13", "2026-08-14", "2026-08-15", "2026-08-16", "2026-08-17", "2026-08-18", "2026-08-19", "2026-08-20", "2026-08-21", "2026-08-22", "2026-08-23", "2026-08-24", "2026-08-25", "2026-08-26", "2026-08-27", "2026-08-28", "2026-08-29", "2026-08-30", "2026-08-31", "2026-09-01", "2026-09-02", "2026-09-03", "2026-09-04", "2026-09-05", "2026-09-06", "2026-09-07", "2026-09-08", "2026-09-09", "2026-09-10", "2026-09-11", "2026-09-12", "2026-09-13", "2026-09-14", "2026-09-15", "2026-09-16", "2026-09-17", "2026-09-18", "2026-09-19", "2026-09-20", "2026-09-21", "2026-09-22", "2026-09-23", "2026-09-24", "2026-09-25"];
+    const totalData = [243, 140, 250, 233, 193, 224, 274, 161, 188, 160, 246, 142, 312, 181, 187, 166, 80, 297, 122, 140, 141, 141, 148, 141, 178, 176, 151, 104, 421, 146, 231, 441, 148, 141, 261, 184, 192, 314, 172, 247, 187, 213, 175, 277, 215, 180, 182, 144, 208, 159, 158, 181, 180, 166, 163, 119, 151, 164, 190, 164];
+    const clusterData = {"\u6b63\u9762/\u652f\u6301": [48, 5, 12, 8, 5, 8, 11, 8, 8, 5, 10, 6, 13, 8, 8, 8, 4, 11, 5, 7, 5, 7, 5, 4, 6, 6, 5, 4, 15, 6, 7, 12, 6, 5, 9, 4, 7, 11, 5, 7, 5, 6, 6, 11, 10, 6, 10, 8, 12, 5, 5, 6, 6, 10, 6, 5, 9, 12, 9, 6], "\u8d1f\u9762/\u8d28\u7591": [67, 15, 24, 23, 18, 22, 24, 17, 20, 17, 18, 18, 29, 18, 18, 16, 13, 29, 17, 17, 20, 17, 14, 13, 16, 21, 15, 12, 35, 20, 18, 38, 16, 16, 20, 14, 17, 30, 17, 29, 17, 19, 14, 25, 19, 18, 17, 10, 19, 13, 13, 17, 18, 17, 15, 10, 14, 13, 16, 14], "\u4e2d\u7acb/\u89c2\u671b": [35, 11, 23, 25, 15, 24, 26, 15, 15, 8, 12, 11, 20, 11, 10, 17, 9, 24, 10, 10, 11, 16, 9, 9, 9, 15, 10, 7, 24, 8, 10, 28, 7, 8, 19, 8, 8, 14, 10, 12, 10, 14, 11, 21, 12, 15, 13, 7, 16, 10, 10, 9, 11, 15, 12, 10, 7, 15, 10, 16], "\u5bf9\u6bd4\u8ba8\u8bba": [42, 45, 68, 71, 59, 66, 80, 55, 51, 54, 58, 36, 76, 48, 45, 52, 33, 71, 44, 45, 49, 49, 44, 45, 44, 54, 51, 39, 106, 46, 57, 111, 47, 50, 79, 50, 51, 77, 53, 60, 49, 58, 49, 75, 53, 55, 60, 47, 62, 41, 41, 50, 54, 54, 47, 26, 55, 53, 55, 47]};
     new Chart(document.getElementById('trendChart'), {
       type: 'line',
       data: {
@@ -61,151 +61,143 @@
     
         <div class="video-item">
           <a href="https://www.bilibili.com/video/BV1HeBZBfEgb" target="_blank">福耀科技大学，三本都不如。张雪峰太敢说了。</a>
-          <div class="stats">UP主: 雪峰老师教你报志愿 · 播放: 553,674 · 评论: 400</div>
+          <div class="stats">UP主: 雪峰老师教你报志愿 · 播放: 553,780 · 评论: 400</div>
         </div>
         <div class="video-item">
           <a href="https://www.bilibili.com/video/BV1asAnzqEEQ" target="_blank">实拍福耀科技大学：居然仅50名学生！</a>
-          <div class="stats">UP主: 小喂的味旅程 · 播放: 408,711 · 评论: 400</div>
-        </div>
-        <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1RzHvzFEtf" target="_blank">《福耀科技大学》福耀大学刚开学就把一群985学生整破防了！</a>
-          <div class="stats">UP主: 暴力蛙纪实 · 播放: 123,196 · 评论: 280</div>
-        </div>
-        <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV15WNy6PE9d" target="_blank">福耀科大，你牛大了</a>
-          <div class="stats">UP主: 是123_本人 · 播放: 392,211 · 评论: 100</div>
-        </div>
-        <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1LGtN6mERF" target="_blank">福耀科技大学能容纳1点6万人，为什么两年加起来才招了150名学生？</a>
-          <div class="stats">UP主: 杂谈工作室 · 播放: 54,037 · 评论: 40</div>
+          <div class="stats">UP主: 小喂的味旅程 · 播放: 408,790 · 评论: 400</div>
         </div>
         <div class="video-item">
           <a href="https://www.bilibili.com/video/BV1YT6wBoEwq" target="_blank">我孩子能考690，我非常焦虑，我想让他上福耀科技大学</a>
-          <div class="stats">UP主: 雪峰老师教你报志愿 · 播放: 43,785 · 评论: 40</div>
+          <div class="stats">UP主: 雪峰老师教你报志愿 · 播放: 43,799 · 评论: 400</div>
         </div>
         <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1mdQzYbER2" target="_blank">对标斯坦福？福耀科技大学 靠谱吗?它是干什么的？适合谁读？</a>
-          <div class="stats">UP主: 北大研哥 · 播放: 91,555 · 评论: 0</div>
+          <a href="https://www.bilibili.com/video/BV1LGtN6mERF" target="_blank">福耀科技大学能容纳1点6万人，为什么两年加起来才招了150名学生？</a>
+          <div class="stats">UP主: 杂谈工作室 · 播放: 54,297 · 评论: 400</div>
         </div>
         <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1WVKa6LE5x" target="_blank">【采风】福耀科技大学26招生再创新高 新增3省份招生“热门专业” 甘肃中学喜报刊登清北及福耀科技大学 对于此事让人拭目以待</a>
-          <div class="stats">UP主: 邪恶鹦鹉5号机 · 播放: 76,570 · 评论: 60</div>
+          <a href="https://www.bilibili.com/video/BV1RzHvzFEtf" target="_blank">《福耀科技大学》福耀大学刚开学就把一群985学生整破防了！</a>
+          <div class="stats">UP主: 暴力蛙纪实 · 播放: 123,242 · 评论: 400</div>
+        </div>
+        <div class="video-item">
+          <a href="https://www.bilibili.com/video/BV15WNy6PE9d" target="_blank">福耀科大，你牛大了</a>
+          <div class="stats">UP主: 是123_本人 · 播放: 392,499 · 评论: 100</div>
         </div>
         <div class="video-item">
           <a href="https://www.bilibili.com/video/BV1papVzEEz8" target="_blank">福耀科技大学第一界新生代表发言，难以想象这含金量有多高</a>
-          <div class="stats">UP主: 账号已注销 · 播放: 35,567 · 评论: 0</div>
+          <div class="stats">UP主: 账号已注销 · 播放: 35,586 · 评论: 0</div>
+        </div>
+        <div class="video-item">
+          <a href="https://www.bilibili.com/video/BV1WVKa6LE5x" target="_blank">【采风】福耀科技大学26招生再创新高 新增3省份招生“热门专业” 甘肃中学喜报刊登清北及福耀科技大学 对于此事让人拭目以待</a>
+          <div class="stats">UP主: 邪恶鹦鹉5号机 · 播放: 76,662 · 评论: 0</div>
+        </div>
+        <div class="video-item">
+          <a href="https://www.bilibili.com/video/BV1mdQzYbER2" target="_blank">对标斯坦福？福耀科技大学 靠谱吗?它是干什么的？适合谁读？</a>
+          <div class="stats">UP主: 北大研哥 · 播放: 91,556 · 评论: 20</div>
+        </div>
+        <div class="video-item">
+          <a href="https://www.bilibili.com/video/BV1q8jn6cEpm" target="_blank">王树国谈福耀科技大学首批50名学生现状：大一就开始科研训练</a>
+          <div class="stats">UP主: 腾讯新闻 · 播放: 231,000 · 评论: 0</div>
         </div>
         <div class="video-item">
           <a href="https://www.bilibili.com/video/BV16aK9zQE9F" target="_blank">我抱了福耀科技大学！！！！</a>
-          <div class="stats">UP主: 东方岳岳 · 播放: 227,331 · 评论: 0</div>
+          <div class="stats">UP主: 东方岳岳 · 播放: 227,439 · 评论: 0</div>
+        </div>
+        <div class="video-item">
+          <a href="https://www.bilibili.com/video/BV1ph4y1f7RH" target="_blank">峰哥锐评曹德旺创办福耀科技大学</a>
+          <div class="stats">UP主: 能飞会飞的鸟 · 播放: 19,151 · 评论: 6</div>
         </div>
         <div class="video-item">
           <a href="https://www.bilibili.com/video/BV13yadzkE5q" target="_blank">福耀科技大学新生报到，跟着学生家长视角看学校环境及准备了什么</a>
-          <div class="stats">UP主: 0凌涵O · 播放: 33,345 · 评论: 18</div>
-        </div>
-        <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1dNVg6dE4E" target="_blank">福耀科技大学，游客食堂一日游（学生食堂二楼吃不了）</a>
-          <div class="stats">UP主: 还在跑步的火啊 · 播放: 14,038 · 评论: 12</div>
-        </div>
-        <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1w6p7zbEQA" target="_blank">【完整版】福耀科技大学开学典礼 王树国校长致辞</a>
-          <div class="stats">UP主: 央视网 · 播放: 83,290 · 评论: 20</div>
-        </div>
-        <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1YzKo6eEWM" target="_blank">福耀科大澄清自负盈亏争议！学生噤声原因揭秘，张雪峰预言被证实</a>
-          <div class="stats">UP主: 全球-科普 · 播放: 324,380 · 评论: 0</div>
+          <div class="stats">UP主: 0凌涵O · 播放: 33,355 · 评论: 18</div>
         </div>
         <div class="video-item">
           <a href="https://www.bilibili.com/video/BV1KKez6GENe" target="_blank">福耀科大澄清自负盈亏争议！学生噤声原因揭秘，张雪峰预言被证实</a>
-          <div class="stats">UP主: 大白白科普 · 播放: 896 · 评论: 0</div>
+          <div class="stats">UP主: 大白白科普 · 播放: 934 · 评论: 0</div>
         </div>
         <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1g5th6GEuv" target="_blank">估计清北生都羡慕死了！福耀科大新生礼包刷屏，开学免费配齐全套家当，单套超1000元</a>
-          <div class="stats">UP主: 一只小鲤娱 · 播放: 2,795 · 评论: 0</div>
+          <a href="https://www.bilibili.com/video/BV1YzKo6eEWM" target="_blank">福耀科大澄清自负盈亏争议！学生噤声原因揭秘，张雪峰预言被证实</a>
+          <div class="stats">UP主: 全球-科普 · 播放: 324,566 · 评论: 0</div>
         </div>
         <div class="video-item">
           <a href="https://www.bilibili.com/video/BV1bB8c6cEAc" target="_blank">去往福耀科大的单程车票！是鸿门宴，还是单刀赴会？</a>
-          <div class="stats">UP主: 是123_本人 · 播放: 31,251 · 评论: 0</div>
+          <div class="stats">UP主: 是123_本人 · 播放: 31,275 · 评论: 0</div>
+        </div>
+        <div class="video-item">
+          <a href="https://www.bilibili.com/video/BV1g5th6GEuv" target="_blank">估计清北生都羡慕死了！福耀科大新生礼包刷屏，开学免费配齐全套家当，单套超1000元</a>
+          <div class="stats">UP主: 一只小鲤娱 · 播放: 2,929 · 评论: 0</div>
+        </div>
+        <div class="video-item">
+          <a href="https://www.bilibili.com/video/BV1WDYGzkExi" target="_blank">福耀科大“第一节课”火了，刺痛名校毕业生：感觉大学四年白读了</a>
+          <div class="stats">UP主: 小田爱分享吖 · 播放: 114,358 · 评论: 0</div>
+        </div>
+        <div class="video-item">
+          <a href="https://www.bilibili.com/video/BV198Ku6NE2i" target="_blank">南京大学，不如福耀科大</a>
+          <div class="stats">UP主: 是123_本人 · 播放: 60,961 · 评论: 0</div>
         </div>
         <div class="video-item">
           <a href="https://www.bilibili.com/video/BV1vPNe6KEuU" target="_blank">福耀科大，你牛在哪？</a>
-          <div class="stats">UP主: 是123_本人 · 播放: 62,758 · 评论: 0</div>
+          <div class="stats">UP主: 是123_本人 · 播放: 62,785 · 评论: 0</div>
         </div>
         <div class="video-item">
           <a href="https://www.bilibili.com/video/BV1kSYJ6jEd7" target="_blank">福耀科技大学2026本科新生代表田智鹤走红：她来自甘肃，高考656分，是福耀科大在甘肃录取的第一名，本人透露选择福耀科大原因！</a>
           <div class="stats">UP主: 只做两袖清风的人 · 播放: 212 · 评论: 0</div>
         </div>
         <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV198Ku6NE2i" target="_blank">南京大学，不如福耀科大</a>
-          <div class="stats">UP主: 是123_本人 · 播放: 60,878 · 评论: 0</div>
+          <a href="https://www.bilibili.com/video/BV1en4y197j7" target="_blank">曹德旺表态，这次福耀大学被叫停，全怪自己!他还要再拿出100亿</a>
+          <div class="stats">UP主: 易水寒影评 · 播放: 31,527 · 评论: 0</div>
         </div>
         <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1JK7t69Ecr" target="_blank">张雪峰当初浅谈“福耀科大”，如今再看，他的预判格外清醒！太历害了！</a>
-          <div class="stats">UP主: 来口西瓜呗 · 播放: 456,577 · 评论: 0</div>
+          <a href="https://www.bilibili.com/video/BV1Cy421B7fP" target="_blank">福耀科技大学能够成为一流大学吗？经费够用吗？</a>
+          <div class="stats">UP主: 才京大學 · 播放: 2,056 · 评论: 0</div>
         </div>
         <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1ph4y1f7RH" target="_blank">峰哥锐评曹德旺创办福耀科技大学</a>
-          <div class="stats">UP主: 能飞会飞的鸟 · 播放: 19,150 · 评论: 0</div>
-        </div>
-        <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1BM7t6pE8f" target="_blank">福耀科大澄清自负盈亏争议！学生噤声原因揭秘，张雪峰预言被证实</a>
-          <div class="stats">UP主: 来口西瓜呗 · 播放: 294,326 · 评论: 0</div>
-        </div>
-        <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1BV7a6vEXj" target="_blank">福耀科大发布了 本学期学生的 学习生活科研总结视频 #福耀科技大学</a>
-          <div class="stats">UP主: 有说有校啊 · 播放: 34,082 · 评论: 0</div>
+          <a href="https://www.bilibili.com/video/BV15ZsRzbErp" target="_blank">福耀科技大学首招研究生！</a>
+          <div class="stats">UP主: 昊哥机械考研 · 播放: 4,916 · 评论: 0</div>
         </div>
         <div class="video-item">
           <a href="https://www.bilibili.com/video/BV164jR6cEVK" target="_blank">福耀科技大学能自负盈亏吗</a>
-          <div class="stats">UP主: 谢作诗的经济学课 · 播放: 2,673 · 评论: 0</div>
+          <div class="stats">UP主: 谢作诗的经济学课 · 播放: 2,676 · 评论: 0</div>
         </div>
         <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1jT386gEct" target="_blank">福耀科技大学未受“自负盈亏”影响，今年招录依然亮眼#高考#大学</a>
-          <div class="stats">UP主: 王土吉爱梦呓 · 播放: 565 · 评论: 0</div>
+          <a href="https://www.bilibili.com/video/BV1A18YzdEbQ" target="_blank">674分上福耀科技大学，被指“脑子进水”？当事人回应</a>
+          <div class="stats">UP主: 掌闻视讯 · 播放: 36,230 · 评论: 0</div>
         </div>
         <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1D7jb63Evr" target="_blank">福耀科技大学各院系自负盈亏？校长王树国：绝非要求市场化创收</a>
-          <div class="stats">UP主: 腾讯新闻 · 播放: 92,286 · 评论: 0</div>
-        </div>
-        <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1t2j863E1G" target="_blank">福耀科技大学：自负盈亏错在哪了！</a>
-          <div class="stats">UP主: 正哥说 · 播放: 119 · 评论: 0</div>
-        </div>
-        <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1UNjR6LEe3" target="_blank">风波升级！福耀科大澄清自负盈亏，曝学生沉默原因，张雪峰说对了</a>
-          <div class="stats">UP主: 乐乐制片厂 · 播放: 56,311 · 评论: 0</div>
-        </div>
-        <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1vD7A62EmP" target="_blank">666！福耀科技大学准备让各专业自负盈亏！</a>
-          <div class="stats">UP主: 整点电子瓜子 · 播放: 2,657 · 评论: 0</div>
+          <a href="https://www.bilibili.com/video/BV1BV7a6vEXj" target="_blank">福耀科大发布了 本学期学生的 学习生活科研总结视频 #福耀科技大学</a>
+          <div class="stats">UP主: 有说有校啊 · 播放: 34,097 · 评论: 0</div>
         </div>
         <div class="video-item">
           <a href="https://www.bilibili.com/video/BV1eD7A62EKE" target="_blank">福耀科技大学要自负盈亏，是顶尖创新还是高分踩坑？</a>
           <div class="stats">UP主: 一凡说升学 · 播放: 485 · 评论: 0</div>
         </div>
         <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1gHjJ6mEkQ" target="_blank">福耀科大转向自负盈亏引热议，曹德旺要求各院系自己养活自己</a>
-          <div class="stats">UP主: 账号已注销 · 播放: 89 · 评论: 0</div>
+          <a href="https://www.bilibili.com/video/BV1BM7t6pE8f" target="_blank">福耀科大澄清自负盈亏争议！学生噤声原因揭秘，张雪峰预言被证实</a>
+          <div class="stats">UP主: 来口西瓜呗 · 播放: 294,328 · 评论: 0</div>
+        </div>
+        <div class="video-item">
+          <a href="https://www.bilibili.com/video/BV1t2j863E1G" target="_blank">福耀科技大学：自负盈亏错在哪了！</a>
+          <div class="stats">UP主: 正哥说 · 播放: 119 · 评论: 0</div>
         </div>
         <div class="video-item">
           <a href="https://www.bilibili.com/video/BV15NjB6GEqe" target="_blank">院系必须自负盈亏！福耀科大一刀戳破高教多年顽疾</a>
           <div class="stats">UP主: 行知探索圈 · 播放: 511 · 评论: 0</div>
         </div>
         <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1EZMh6VE5o" target="_blank">福耀科技大学准备让各专业自负盈亏</a>
-          <div class="stats">UP主: 聚焦视角 · 播放: 211 · 评论: 0</div>
+          <a href="https://www.bilibili.com/video/BV1hL756gEfa" target="_blank">福耀科技大学彻底翻车？</a>
+          <div class="stats">UP主: 永兴talk · 播放: 2,139 · 评论: 0</div>
         </div>
         <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1w4j16gEgk" target="_blank">福耀科技大学准备让各专业自负盈亏，没钱开什么大学？</a>
-          <div class="stats">UP主: 阿宝吃了吗 · 播放: 6,354 · 评论: 0</div>
+          <a href="https://www.bilibili.com/video/BV1KVY56iE9s" target="_blank">曹德旺先生:捐两三百亿依旧只是小善！大善是为政，小善是为慈。#企业家研学研修#福耀科技大学商学教育#接待社团研学定制</a>
+          <div class="stats">UP主: 福耀科技大学商学教育 · 播放: 96 · 评论: 0</div>
         </div>
         <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1XXj76mEfr" target="_blank">福耀科大转向自负盈亏引热议 ，曹德旺要求各院系自己养活自己</a>
-          <div class="stats">UP主: 一爽电台 · 播放: 128,802 · 评论: 0</div>
+          <a href="https://www.bilibili.com/video/BV1peYC6yE3e" target="_blank">福耀集团董事长曹晖:车间一线的工作是他人生的开始#企二代传承#福耀科技大学《心若菩提特训营》曹德旺先生亲授分享经营哲学10月22日开课报名中#一线基层管理模式</a>
+          <div class="stats">UP主: 福耀科技大学商学教育 · 播放: 326 · 评论: 0</div>
         </div>
         <div class="video-item">
-          <a href="https://www.bilibili.com/video/BV1UcjE6GEuP" target="_blank">福耀科技大学说要实现自负盈亏，各院系自己养活自己</a>
-          <div class="stats">UP主: 亳都书生 · 播放: 5,904 · 评论: 0</div>
+          <a href="https://www.bilibili.com/video/BV1NCtT6NEef" target="_blank">曹德旺先生商道经营哲学，大时代发展是多元化还是专注主业发展，且看曹先生的为与不为的价值观#福耀科技大学商学教育 #曹德旺心若菩提课程分享#企业家培训</a>
+          <div class="stats">UP主: 福耀科技大学商学教育 · 播放: 95 · 评论: 0</div>
         </div>
   </div>
 
@@ -214,7 +206,7 @@
     
         <div class="cluster-card" style="border-left: 4px solid #2ecc71;">
           <h4>正面/支持</h4>
-          <div class="stat">9 条 (4.7%)</div>
+          <div class="stat">6 条 (3.7%)</div>
           
             <div class="comment-item">
               <div class="text">民办比不上公办原因在于中国不是纯市场经济国家  有很多资源不是钱能交换来的  公办大学最次是副厅单位  级别越高 就算什么都不做 也能汇集很多资源
@@ -234,25 +226,17 @@
               <div class="info">@叹号三 · 👍 129</div>
             </div>
             <div class="comment-item">
-              <div class="text">感觉家长会是天天在评论区刷‘王树国校长[支持][支持][支持]’的那种[笑哭][笑哭]</div>
-              <div class="info">@自来人不蹇不崩 · 👍 122</div>
+              <div class="text">希望他和西湖大学都能起个试验性带头作用吧，做一些实质性改革，要是未来20年普通大学教育还是这样，去这些学校也未尝不可，不过目前不推荐学生去赌前程</div>
+              <div class="info">@落日信箱ve · 👍 55</div>
             </div>
             <div class="comment-item">
-              <div class="text">希望是一所真正能培养人才的学府，而非是成为资本附庸的工厂，王校长的履历是令人景仰，相信是致力于教，唯一虑在学术圣地是否受资本干预</div>
-              <div class="info">@风起风聚 · 👍 31</div>
-            </div>
-            <div class="comment-item">
-              <div class="text">这是一位前哈尔滨工业大学，西安交通大学校长的讲话，感觉评论区和弹幕很多人在酸，不知道B站风气最近几年为什么变成这样啦！希望福耀科技大学善待每一位学生，也希望每一位学生对学校和老师保持尊重，互相成就彼此。</div>
-              <div class="info">@JakeYang911 · 👍 14</div>
-            </div>
-            <div class="comment-item">
-              <div class="text">真正的好校长，国家之栋梁，国家之幸，民族之幸[支持][支持]</div>
-              <div class="info">@樊哥高中物理 · 👍 12</div>
+              <div class="text">50个人可以搞得这么火，加油</div>
+              <div class="info">@成都宝税税务师事务所 · 👍 11</div>
             </div>
         </div>
         <div class="cluster-card" style="border-left: 4px solid #e74c3c;">
           <h4>负面/质疑</h4>
-          <div class="stat">16 条 (8.4%)</div>
+          <div class="stat">14 条 (8.5%)</div>
           
             <div class="comment-item">
               <div class="text">福耀大学强绑定于福耀玻璃这家企业，福耀玻璃强绑定于后面的……，进这种大学就是明牌站队伍，不留后路，把自己的后半辈子押进这一系里。
@@ -270,7 +254,7 @@
             </div>
             <div class="comment-item">
               <div class="text">我是南科大前几届的学生，怎么总有人拿福耀碰瓷南科大。南科大不是民办，深圳政府出钱的。北上广深大城市只有深圳学校少，所以南科大经费特别足，国内的实验平台是数一数二的，我当时经常遇到清北的学生过来借实验室。然后理工科稍微努力一下基本都可以找到杰青以上的老师写推荐信，出国很容易，专业前70%都可以保研。我当时化学系70多人，现在差不多一半博士毕业了。</div>
-              <div class="info">@已发子刊已改名 · 👍 865</div>
+              <div class="info">@已发子刊已改名 · 👍 866</div>
             </div>
             <div class="comment-item">
               <div class="text">学生也是绝了，为了包就业600分来这种民办，不如去双非一本学电气计算机[笑哭]</div>
@@ -278,7 +262,7 @@
             </div>
             <div class="comment-item">
               <div class="text">南科大怎么样呢，福耀这么坑，不知道西湖大学，南科大上科大那边啥情况，就业和未来。不会是为了所谓一小批人然后营造一个大家陪跑的环境吧</div>
-              <div class="info">@自助超人 · 👍 836</div>
+              <div class="info">@自助超人 · 👍 837</div>
             </div>
             <div class="comment-item">
               <div class="text">说实话，手里攥着600多分，把下半生命运赌在一所民办大学上，有这个勇气的人不多！</div>
@@ -292,11 +276,11 @@
         </div>
         <div class="cluster-card" style="border-left: 4px solid #f39c12;">
           <h4>中立/观望</h4>
-          <div class="stat">10 条 (5.3%)</div>
+          <div class="stat">16 条 (9.8%)</div>
           
             <div class="comment-item">
               <div class="text">牢雪峰推荐的不一定要去，但是牢雪峰避雷的千万别选</div>
-              <div class="info">@我是一只大也够 · 👍 2489</div>
+              <div class="info">@我是一只大也够 · 👍 2491</div>
             </div>
             <div class="comment-item">
               <div class="text">张雪峰说好你不一定信，张雪峰说差你别犟</div>
@@ -305,6 +289,10 @@
             <div class="comment-item">
               <div class="text">太幽默了，等着看结果[吃瓜]</div>
               <div class="info">@Ares_Watson · 👍 294</div>
+            </div>
+            <div class="comment-item">
+              <div class="text">福耀的员工先把自己孩子送进去做试验，看看四年后有多少成了科学家或企业家人才</div>
+              <div class="info">@呼啦圈而 · 👍 241</div>
             </div>
             <div class="comment-item">
               <div class="text">福耀科技大学很尴尬，曹德旺现在大力支持，但曹德旺不是神仙，他还有多少年活，他哪天人没了他的继任者会不会这么烧钱办这个学校还和难说</div>
@@ -316,20 +304,16 @@
             </div>
             <div class="comment-item">
               <div class="text">等第一批毕业就业了，就会暴涨人数，声名远扬，啥口碑都没就业待遇好</div>
-              <div class="info">@阿锋游记 · 👍 112</div>
+              <div class="info">@阿锋游记 · 👍 113</div>
             </div>
             <div class="comment-item">
               <div class="text">看看就行了，洗洗更健康</div>
               <div class="info">@玉龙陆逊 · 👍 104</div>
             </div>
-            <div class="comment-item">
-              <div class="text">一股工业园区的味道，压抑死了。看看真正的大学环境吧。</div>
-              <div class="info">@光头也不强 · 👍 13</div>
-            </div>
         </div>
         <div class="cluster-card" style="border-left: 4px solid #3498db;">
           <h4>对比讨论</h4>
-          <div class="stat">55 条 (28.9%)</div>
+          <div class="stat">47 条 (28.7%)</div>
           
             <div class="comment-item">
               <div class="text">福耀大学强绑定于福耀玻璃这家企业，福耀玻璃强绑定于后面的……，进这种大学就是明牌站队伍，不留后路，把自己的后半辈子押进这一系里。
@@ -357,11 +341,11 @@
             </div>
             <div class="comment-item">
               <div class="text">兄弟们你们说的我好慌，本人福建570随便填了这玩意，因为我看它去年分数高，想着填就填了，福耀今年再烂会掉到这个分数吗？[笑哭]</div>
-              <div class="info">@NameTags · 👍 1031</div>
+              <div class="info">@NameTags · 👍 1032</div>
             </div>
             <div class="comment-item">
               <div class="text">我是南科大前几届的学生，怎么总有人拿福耀碰瓷南科大。南科大不是民办，深圳政府出钱的。北上广深大城市只有深圳学校少，所以南科大经费特别足，国内的实验平台是数一数二的，我当时经常遇到清北的学生过来借实验室。然后理工科稍微努力一下基本都可以找到杰青以上的老师写推荐信，出国很容易，专业前70%都可以保研。我当时化学系70多人，现在差不多一半博士毕业了。</div>
-              <div class="info">@已发子刊已改名 · 👍 865</div>
+              <div class="info">@已发子刊已改名 · 👍 866</div>
             </div>
             <div class="comment-item">
               <div class="text">学生也是绝了，为了包就业600分来这种民办，不如去双非一本学电气计算机[笑哭]</div>
